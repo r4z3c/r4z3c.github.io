@@ -1,1 +1,38 @@
-Hello
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>r4z3c - Open Source Projects</title>
+    <link rel="stylesheet" href="dist/assets/css/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>r4z3c - Open Source Projects</h1>
+      </div>
+    </header>
+
+    <section>
+      <div class="container card">
+        <div class="intro">
+          <p class="intro__greeting heading">Welcome</p>
+          <p class="intro__disclaimer">This is an "index page" for my open source projects. Most of them have an "educational" and/or "academic" purpose. Trough them, I learned and keep learning, some cool things that I want to share.</p>
+          <p class="intro__enjoy">I hope you enjoy.</p>
+        </div>
+
+        <hr />
+
+        <div id="projects">
+          <project
+            v-for="item in projectList"
+            v-bind:project="item"
+            v-bind:key="item.id">
+          </project>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="dist/assets/js/home.js"></script>
+  </body>
+</html>

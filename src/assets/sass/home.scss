@@ -1,0 +1,41 @@
+@import 'shared/variables';
+
+@import 'shared/card';
+@import 'shared/containers';
+@import 'shared/texts';
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: $main-bg-color;
+}
+
+header {
+  background: $main-color-medium;
+  color: white;
+  padding: 10px 0;
+
+  h1 {
+    font-weight: normal;
+  }
+}
+
+section {
+  margin-top: 25px;
+
+  .container {
+    background: white;
+
+    .intro {
+      padding: 15px 20px;
+
+      .intro__greeting {
+        margin: 10px 0;
+      }
+    }
+
+    #projects {
+      padding: 5px 20px 15px 20px;
+    }
+  }
+}
